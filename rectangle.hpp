@@ -13,5 +13,5 @@ public:
 	int getHeight();
 private:
 	int height, width;	
-}
+};
 #endif

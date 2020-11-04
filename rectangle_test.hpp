@@ -57,7 +57,7 @@ TEST(PerimeterTest, bigPerimeter) {
 
 TEST(PerimeterTest, zeroAndNonzero) {
     Rectangle* test = new Rectangle(0, 5);
-    EXPECT_EQ(test->perimeter(),std::runtime_error);
+    EXPECT_THROW(test->perimeter(),std::runtime_error);
 }
 
 TEST(PerimeterTest, largePerimeter) {
